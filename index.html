@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO</title>
+</head>
+<style type="text/css">
+*{
+	font-family: sans-serif;
+}
+body{
+	background-color: #0097cc;
+	text-align: center;
+}
+.btn{
+	background-color:  #0097cc;
+	transition: 0.2s;
+}
+.btn:hover{
+	background-color:#00bbe6;
+}
+::-webkit-input-placeholder{
+	color: white;
+}
+.edit{
+	padding:10px;
+	border-radius: 10px;
+	border: 2px solid #38cbff;
+	color: white;
+	background:transparent;
+	transition: 0.2s;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.del{
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid #38cbff;
+	color: white;
+	background:transparent;
+	transition: 0.2s;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.del:hover{
+	background-color:#00bbe6;
+	text-align: center;
+}
+.edit:hover{
+	background-color:#00bbe6;
+}
+.li{
+	font-size: 25px;	
+}
+/*@media screen and (max-width: 520px){
+.main {
+    width: 95%;
+}
+}
+@media screen and (max-width: 880px){
+.main {
+    width: 85%;
+}
+}
+@media screen and (max-width: 1125px){
+.main {
+    width: 70%;
+}
+}*/ 	
+</style>
+<body>
+	<div class="main" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 60%;
+    height: 700px;border-radius: 20px;box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);">
+		<div>
+			<h1 style="text-align: center;font-size:50px;">Todo List</h1>
+		<input placeholder="ENTER TASK TODO...." type="text" name="" id="inp" style="width: 70%; border: none;border-bottom: 3px solid #38cbff;outline: none;background-color:#0097cc ;color: white;font-size: 25px">
+		<button class="btn" onclick="addItem()" style="padding: 10px;border-radius: 10px;border: 2px solid #38cbff;color: white;">ADD ITEM</button>
+		<button class="btn"  style="padding: 10px;border-radius: 10px;border: 2px solid #38cbff;color: white;" onclick="deleteall()">DELETE ALL</button>
+		</div>
+		<div>
+		<ul id="ul" style="overflow: auto;height:400px;"></ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
